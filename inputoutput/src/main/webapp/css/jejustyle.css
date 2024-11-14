@@ -1,0 +1,38 @@
+@charset "UTF-8";
+body{
+	font: 14px 맑은 고딕
+}
+
+.container{
+	position:absolute;
+	width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #E7E7E7
+}
+
+header{
+	position:relative;
+	height: 280px;
+	background-image: url('../images/bg.jpg');
+	background-size: 100% 100%;
+	background-position: left top;
+}
+
+header h1{
+	position:absolute;
+	right:20px;
+	bottom:70px;
+	font-size:3em;
+	color:#FFC;
+	text-shadow:1px 2px 2px #000;
+}
+
+header h2{
+	position:absolute;
+	right:20px;
+	bottom: 30px;
+	font-size:2em;
+	color:#FF0;
+	text-shadow:0px 1px 1px #000;
+}

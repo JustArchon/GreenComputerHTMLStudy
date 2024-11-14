@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>플렉스 박스</title>
+<style>
+	.wrapper{
+		width:500px;
+		height:300px;
+		margin: 0 auto 20px;
+		display: flex;
+		flex-wrap: wrap;
+		border:2px solid black;
+	}
+	#container1{
+		-mx-align-content: flex-start;
+		-webkit-align-content: flex-start;
+		align-content:flex-start;
+	}
+	#container2{
+		
+	}
+	h2{
+		font-size:20px;
+		font-weight:bold;
+		padding:20px;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="box1"><h2>box1</h2></div>
+		<div id="box2"><h2>box2</h2></div>
+		<div id="box3"><h2>box3</h2></div>
+	</div>
+
+</body>
+</html>

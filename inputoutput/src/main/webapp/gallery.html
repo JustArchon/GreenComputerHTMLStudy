@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 함수 </title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+*{margin: 0; padding: 0;}
+#galleryZone {text-align: center;}
+#galleryZone input[type="image"]{margin:0 8px;}
+</style>
+<script>
+var num = 1;
+function gallery(direct){
+	if(direct){
+		if(num==8) return;
+		num++;
+	}else{
+		if(num == 1) return;
+		num--;
+	}
+	
+	var imgTag = document.getElementById("photo");
+	imgTag.setAttribute("src","images/pic_" + num + ".jpg");
+}
+</script>
+</head>
+<body>
+	<div id="galleyZone">
+		<p><img src="images/pic_1.jpg" id ="photo" alt="" style="width:400px; height:400px" class="border border-warning border-5"></p>
+		<p>
+			<button type="button" class = "btn btn-success btn-lg" onclick="gallery(0)">이전</button>
+			<button type="button" class = "btn btn-success btn-lg" onclick="gallery(1)">다음</button>
+		</p>
+	</div>
+</body>
+</html>

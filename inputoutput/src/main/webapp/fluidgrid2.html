@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fluid Grid Layout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+	body { font-size:16px; }
+	
+	#wrapper{
+		width:96%;
+		margin:0 auto;
+	}
+	header {
+		display:flex;
+		width: 100%;
+		height: 120px;
+		background-color: green;
+		margin-bottom: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+	header p{
+		font-size: 2rem;
+		color: white;
+	}
+	nav {
+		display:flex;
+		width: 100%;
+		height: 40px;
+		background-color: #066cfa;
+		margin-bottom: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+	nav p{
+		font-size: 1.5rem;
+		color: white;
+	}
+	.content{
+		float:right;
+		width:62%;
+		height:400px;
+		padding:1.5625%;
+		background-color:#ffd800;
+		text-align: center;
+		vertical-align: middle;
+		margin-bottom: 10px;
+	}
+	.content h4{
+		font-size: 1.5rem;
+		color: white;
+	}
+	.left-side{
+		display:flex;
+		float:left;
+		width:31%;
+		height:400px;
+		padding:1.5625%;
+		background-color:#00ff90;
+		justify-content: center;
+		align-items: center;
+	}
+	.contenttext{
+		display: flex;
+		width: 100%;
+		height:100px;
+		margin-top: 30px;
+		background-color:red;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.5rem;
+		color: white;
+	}
+	footer{
+		display:flex;
+		clear:both;
+		width:100%;
+		height:50px;
+		background-color:lightgray;
+		justify-content: center;
+		align-items: center;
+		margin-top: 50px;
+	}
+	footer h4{
+		font-size: 1.5rem;
+		color: white;
+	}
+</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<p><b>헤더</b></p>
+		</header>
+		<nav>
+			<p>내비게이션</p>
+		</nav>
+		<section class="content">
+		<h4>컨텐츠</h4>
+			<div class="contenttext">
+			<p>본문</p>
+			</div>
+			<div class="contenttext">
+			<p>본문</p>
+			</div>
+		</section>
+		<aside class="left-side">
+			<picture>
+				<source srcset="images/fluiddog.png" media="(min-width:512px)">
+				<img src="images/fluiddog.png" alt="dog" style="width:100%">
+			</picture>
+		</aside>
+		<footer>
+			<h4>푸터</h4>
+		</footer>
+	</div>
+</body>
+</html>
